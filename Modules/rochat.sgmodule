@@ -1,0 +1,10 @@
+#!name=rochat
+#!desc=rochat
+#!icon=https://h.uguu.se/JHVCrNLm.png
+[Script]
+.com/sultan1sa/Ddd/raw/refs/heads/main/sfh/ = type=http-response, pattern=https://api.rochathub.com/inteco.user.v1.UserRightsService/GetUserRights, script-path=https://github.com/sultan1sa/Ddd/raw/refs/heads/main/sfh/main1, requires-body=true, max-size=-1, timeout=60
+
+.com/sultan1sa/Ddd/raw/refs/heads/main/sfh/ = type=http-response, pattern=https://api.rochathub.com/inteco.user.v1.UserRightsService/GetUserRights, script-path=https://github.com/sultan1sa/Ddd/raw/refs/heads/main/sfh/main2, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.rochathub.com
